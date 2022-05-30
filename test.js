@@ -35,19 +35,32 @@
  * На основе строки "JavaScript is a pretty good language"
  * Cделать новую строку, где каждое слово начинается с большой буквы, а пробелы удалены. Использовать цикл for.
  */
+// const text = "JavaScript is a pretty good language"
+// let newText
+// for (let i = 0; i < text.length; i += 1) {
+    
+  
+//     newText = text[i]
+    
+//     newText += newText
+//     console.log(newText)
+// }
 
 /**
  * Example 12
  * Порахувати кількість рядків в змінній text. Використовуючи цикл while.
  */
 
-const text = `Думи мої, думи мої,
-Лихо мені з вами!
-Нащо стали на папері
-Сумними рядами?..
-Чом вас вітер не розвіяв
-В степу, як пилину?
-Чом вас лихо не приспало,
-Як свою дитину?...`;
-const result = text.search("")
-console.log(result)
+// const text = `Думи мої, думи мої,
+// Лихо мені з вами!
+// Нащо стали на папері
+// Сумними рядами?..
+// Чом вас вітер не розвіяв
+// В степу, як пилину?
+// Чом вас лихо не приспало,
+// Як свою дитину?...`;
+// console.log(text)
+// let i
+// while (i <= text.length) {
+//     console.log(i)
+// }
