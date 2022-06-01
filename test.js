@@ -35,16 +35,25 @@
  * На основе строки "JavaScript is a pretty good language"
  * Cделать новую строку, где каждое слово начинается с большой буквы, а пробелы удалены. Использовать цикл for.
  */
-// const text = "JavaScript is a pretty good language"
-// let newText
-// for (let i = 0; i < text.length; i += 1) {
+const text = "JavaScript is a pretty good language"
+let newText = ""
+for (let i = 0; i < text.length; i += 1) {
+    // newText = text[i].toUpperCase();
+    newText += text[i].toUpperCase() ;
+    // if (text[i] === text[i].toLowerCase()) {
+    //     newText = text[i].toUpperCase()
+    //     newText += newText
+    // } if (text[i] === " ") {
+    //     continue
+    // } else {
+    //     newText = text[i].toLowerCase()
+        
+    // }
     
-  
-//     newText = text[i]
-    
-//     newText += newText
-//     console.log(newText)
-// }
+    // console.log(newText)
+}
+console.log(newText);
+// console.log(newText)
 
 /**
  * Example 12
@@ -59,8 +68,24 @@
 // В степу, як пилину?
 // Чом вас лихо не приспало,
 // Як свою дитину?...`;
-// console.log(text)
-// let i
-// while (i <= text.length) {
-//     console.log(i)
+
+
+// let counter = 1
+
+// for (let i = 0; i < text.length; i += 1) {
+//     // concole.log(text[i])
+//     if (text[i] === "\n") {
+//         console.log(text[i])
+//         counter +=1
+//     }
 // }
+// console.log(counter)
+
+// let i = 0
+//     while ( i < text.length){
+//         if (text[i] === "\n") {
+//             counter += 1
+//         }
+//         i += 1
+//     }
+// console.log(counter)
