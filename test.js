@@ -35,11 +35,18 @@
  * На основе строки "JavaScript is a pretty good language"
  * Cделать новую строку, где каждое слово начинается с большой буквы, а пробелы удалены. Использовать цикл for.
  */
-const text = "JavaScript is a pretty good language"
-let newText = ""
-for (let i = 0; i < text.length; i += 1) {
-    // newText = text[i].toUpperCase();
-    newText += text[i].toUpperCase() ;
+// const text = "JavaScript is a pretty good language"
+// let newText = ""
+// for (let i = 0; i < text.length; i += 1) {
+//     if (text[i] === " ") {
+//         continue
+//     } else if (text[i - 1] === " ") {
+//         newText += text[i].toUpperCase()
+//     }
+//     else {
+//        newText += text[i]; 
+//     }
+    
     // if (text[i] === text[i].toLowerCase()) {
     //     newText = text[i].toUpperCase()
     //     newText += newText
@@ -51,8 +58,8 @@ for (let i = 0; i < text.length; i += 1) {
     // }
     
     // console.log(newText)
-}
-console.log(newText);
+// }
+// console.log(newText);
 // console.log(newText)
 
 /**
@@ -89,3 +96,59 @@ console.log(newText);
 //         i += 1
 //     }
 // console.log(counter)
+
+// function findLongestWord(string) {
+//   // Change code below this line
+//     let array = string.split(" ")
+//     let word = array[0]
+//     for (i = 0; i < array.length; i += 1){
+//         if (array[i].length > word.length) {
+//             word = array[i]
+//         }
+//     }
+//     return word
+
+//   // Change code above this line
+// }
+
+// console.log(findLongestWord("May the for be  with you"))
+
+
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [min];
+//   // Change code below this line
+//     for (let i = min + 1; i <= max; i += 1){
+//     numbers.push(i)
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(10, 17))
+
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//   let array = []
+//     for (i = 0; i < numbers.length; i += 1 ){
+//       numbers[i] > value ? array.push(numbers[i]) : false
+//   }
+//   return array
+
+//   // Change code above this line
+// }
+// console.log(filterArray([12, 24, 8, 41, 76], 20))
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//     let array = []
+//     for (i = 0; i < array1.length; i += 1){
+//         if (array2.includes(array1[i])) {
+//             array.push(array1[i])
+//         }
+//     }
+//     return array
+
+//  // Change code above this line
+// }
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]))
+
