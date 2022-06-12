@@ -152,3 +152,62 @@
 // }
 // console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]))
 
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+//   let total = 0
+//   for (const product of products){
+//     if(product.name === productName){
+//       total = product.price * product.quantity
+//     }
+    
+//     }
+//     return total
+//   // Change code above this line
+// }
+
+// console.log(calculateTotalPrice("Scanner"))
+
+
+// function getProductPrice(productName) {
+//   // Change code below this line
+//   let sum = null;
+//    for (let product of products){
+//      if (product.name === productName){
+//        sum = product.price
+//      }
+//    }
+//   return sum
+
+//   // Change code above this line
+// }
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//     let objectValues = []
+//     for (const product of products) {
+//         if(product[propName])
+//         objectValues.push(product[propName])
+//     }
+//     return objectValues
+//   // Change code above this line
+// }
+
+
+// console.log(getAllPropValues('price'))
+
+function add(...args) {
+  let total = 0
+  for (let arg of args){
+    total += arg
+  }
+  return total
+  // Change code above this line
+}
+console.log(add(7, 5, 12))
