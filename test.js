@@ -202,12 +202,36 @@
 
 // console.log(getAllPropValues('price'))
 
-function add(...args) {
-  let total = 0
-  for (let arg of args){
-    total += arg
+// function add(...args) {
+//   let total = 0
+//   for (let arg of args){
+//     total += arg
+//   }
+//   return total
+//   // Change code above this line
+// }
+// console.log(add(7, 5, 12))
+
+const bookShelf = {
+  // Change code below this line
+  books: ["The last kingdom", "The guardian of dreams"],
+  getBooks() {
+    return "Returning all books";
+  },
+  addBook(bookName) {
+    this.books.pop(bookName)
+    return `Adding book ${bookName}`;
+  },
+  removeBook(bookName) {
+    this.books.push(bookName)
+    return `Deleting book ${bookName}`
   }
-  return total
+  updateBook(oldName, newName) {
+    // const index = this.books.indexOf(oldName)
+    // this.books.splice(this.books.indexOf(oldName), 1, newName)
+    // return `Updating book ${oldName} to ${newName}`
+  }
   // Change code above this line
-}
-console.log(add(7, 5, 12))
+};
+bookShelf.addBook("Sands of dune")
+console.log(bookShelf.updateBook("Sands of dune", "Dune"))
