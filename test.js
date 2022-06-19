@@ -282,6 +282,106 @@
 // };
 
 // console.log(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"))
-lemon = function(){}
-fruits = ["mango", lemon, "apple", "cherry", "orange"];
-console.log(fruits.findIndex(lemon))
+// lemon = function(){}
+// fruits = ["mango", lemon, "apple", "cherry", "orange"];
+// console.log(fruits.findIndex(lemon))
+
+
+
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// // Chande code below this line
+// function makeMessage(pizzaName, callback) {
+// return  callback(pizzaName);
+// }
+// console.log(makeMessage("Ultracheese", deliverPizza))
+
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+// // Change code below this line
+
+// makePizza("Ultracheese", function eatPizza(pizzaName) {
+//     console.log(`Eating pizza ${pizzaName}.`)
+// })
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError ) {
+//     if(pizzaPalace.pizzas.includes(pizzaName)){
+//       return onSuccess(pizzaName)
+//     }
+//     return onOrderError(pizzaName)
+//   },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError))
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newArray = []
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       newArray.push(numbers[i] + value) ;
+//     }
+//     else {
+//         newArray.push(numbers[i])
+//     }
+//   }
+//   return newArray
+//   // Change code above this line
+// }
+// console.log(changeEven([1, 2, 3, 4, 5, 8], 10))
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+];
+// Change code below this line
+
+const titles = []
+books.map(book => titles.push(book.title));
+console.log(titles)
+console.log(books)
